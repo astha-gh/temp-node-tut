@@ -5,7 +5,7 @@ const { resolve } = require('path');
 
 const getText = (path) => {
     return new Promise((resolve, reject) => {
-        readFile('./content/first.txt', 'utf8', (err, result) => {
+        readFile(path, 'utf8', (err, result) => {
             if (err) {
                 reject(err);
                 return;
